@@ -1,0 +1,87 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #ffffff;
+}
+
+.content {
+    text-align: center;
+    position: relative;
+    top: -50px; /* Ajusta la posición del contenido hacia arriba */
+}
+
+/* Estilo para el título */
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #000000; /* Color naranja atractivo */
+}
+
+/* Estilos para los botones */
+.buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+button {
+    padding: 12px 24px;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+/* Estilo botón Sí */
+#yes {
+    background-color: #34b5ff; /* Verde */
+    color: white;
+}
+
+#yes:hover {
+    background-color: #45a049;
+}
+
+/* Estilo botón No */
+#no {
+    background-color: #f44336; /* Rojo */
+    color: white;
+    position: relative;
+}
+
+/* Contenedor del video */
+#videoContainer {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.9); /* Fondo oscuro */
+    align-items: center;
+    justify-content: center;
+}
+
+#videoContainer video {
+    width: 80%;
+    height: auto;
+}
+
+.hidden {
+    display: none;
+}
